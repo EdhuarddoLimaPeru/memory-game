@@ -9,14 +9,15 @@
 
 /* ----------  BODY  ---------- */
 body {
-  font-family:Arial, Helvetica, sans-serif;
-  background: #fefefe;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #3fc6e4 ;
   color: #333;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  color: #c73097;
 }
 
 /* ----------  CONTENEDOR PRINCIPAL  ---------- */
@@ -33,6 +34,7 @@ body {
   grid-template-columns: repeat(4, 1fr); /* 4 columnas */
   grid-template-rows: repeat(4, 1fr);    /* 4 filas — fuerza 4×4 */
   gap: 0.5rem;
+  
 }
 
 /* ----------  CARTA  ---------- */
@@ -66,7 +68,12 @@ body {
 }
 
 .card-front {
-  background: #ddd;
+  background: #5b3d9d;
+  border: 2px solid;
+}
+
+.card-front:hover{
+  background-color: rgb(170, 41, 196);
 }
 
 .card-back {
@@ -82,4 +89,5 @@ body {
 #message {
   margin-top: 1rem;
   font-weight: 700;
+  color: ;
 }

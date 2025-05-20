@@ -1,10 +1,10 @@
 /* ---------- CONFIG ---------- */
 const images = [
-  '001.jpeg','0062.jpeg','0063.jpeg','0064.jpeg','0064.jpeg',
+  '001.jpeg','0062.jpeg','0063.jpeg','0064.jpeg','0057.jpeg',
   '0073.jpeg','0074.jpeg','011.jpeg'
 ];               // 8 imágenes distintas (16 cartas en total)
 
-const maxErrors = 3;
+const maxErrors = 5;
 
 /* ---------- VARIABLES DE ESTADO ---------- */
 let firstCard = null;
@@ -76,11 +76,11 @@ function handleCardClick(card, imgSrc) {
   /* comprobamos coincidencia */
   if (firstCard.imgSrc === secondCard.imgSrc) {
     matchedPairs++;
-    showMessage("Acertáste 🎉🎉 !!!")
+    showMessage("Acertaste 🎉🎉 sigue ,sigue no te detengas !!!")
     resetTurn();
 
     if (matchedPairs === images.length) {
-      showMessage("🎉 ¡Felicitaciones! Tienes una memoria excelente.");
+      showMessage("🎉 ¡oooohhhhh...!tu memoria es más allá de los tiempos.Entonces prepárate para el juego 2 !! ");
     }
   } else {
     errorCount++;
@@ -89,7 +89,7 @@ function handleCardClick(card, imgSrc) {
       showMessage("😢 Agotaste tus 4 intentos. Reiniciando…");
       setTimeout(() => location.reload(), 2000);
     } else {
-      showMessage(`⚠️ Error ${errorCount}/${maxErrors}. ¡acuérdate tienes 4 chances!`);
+      showMessage(`⚠️ Error ${errorCount}/${maxErrors}. ¡acuérdate tienes 5 chances,es que nos caes bien!`);
     }
 
     setTimeout(() => {
